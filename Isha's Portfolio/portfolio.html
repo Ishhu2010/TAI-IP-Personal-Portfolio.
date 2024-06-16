@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personal Portfolio Website</title>
+   <link rel="stylesheet" href="https://kit.fontawesome.com/48bcbf2c30.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+   <div id="header">
+      <div class="container">
+         <nav>
+            <img src="logo.png" alt="" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Front-end Designer</p>
+            <h1>Hi, I'm <span>Isha</span> <br> Singadiya From India</h1>
+         </div>
+      </div>
+   </div>
+   <!-- <-----------------about-------------------->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="User.png">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vero ducimus odit iusto praesentium,
+                  architecto sequi nostrum culpa qui, deserunt velit enim quia ab expedita temporibus omnis eveniet
+                  repudiandae at.</p>
+
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>Bootstrap(Framework)</span><br>Building a more attractive webs.</li>
+                     <li><span>Javascript</span><br></li>
+                     <li><span>Front-end Designer</span><br>Web Designing</li>
+                     <li><span>Web Development</span><br>
+                        <p>I am not yet a fully-fledged web developer; I am currently learning. I have learned a lot
+                           from the #TechAInterns program.</p>
+                     </li>
+                  </ul>
+
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2019-2020</span><br>Completed SSc Board From SKP High School.</li>
+                     <li><span>2020-2022</span><br>Completed HSc Board From Swami Vivekanand Vidyalaya And Kanishtha
+                        Maha-Vidyalaya Junior College.</li>
+                     <li><span>2022-2025</span><br>Aspiring IT Professional and Undergraduate Student at Guru Nanak
+                        College of Arts, Science, and Commerce.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ------------------------------portfolio-------------------- -->
+
+   <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+
+            <div class="work">
+               <img src="work 1.jpg" style="height: 400px;width: 500px;">
+               <div class="layer">
+                  <h3>Website 1</h3>
+                  <p>The Website connects you yo the talented people around the world.
+                  </p>
+                  <a href="#"><i class='	fas fa-external-link-alt'></i></a>
+               </div>
+
+            </div>
+            <div class="work">
+               <img src="work 2.jpg" style="height: 400px;width: 500px;">
+               <div class="layer">
+                  <h3>Website 2</h3>
+                  <p>The Website connects you yo the talented people around the world.
+                  </p>
+                  <a href="#"><i class='	fas fa-external-link-alt'></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="wrok 3.jpg" style="height: 400px;width: 500px;">
+               <div class="layer">
+                  <h3>Website 3</h3>
+                  <p>The Website connects you yo the talented people around the world.
+                  </p>
+                  <a href="#"><i class='	fas fa-external-link-alt'></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+      </div>
+   </div>
+
+   <!--------------------contact------------------------>
+
+   <div id="contact">
+
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="" sub-title>Contact Me</h1>
+               <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+               <p><i class="fas fa-phone-flip"></i>0987654321</p>
+               <div class="social-icons">
+                  <a href="https://facebook.com/">
+                     <li class="fab fa-facebook"></li>
+                  </a>
+                  <a href="https://linkedin.com/">
+                     <li class="fab fa-linkedin"></li>
+                  </a>
+                  <a href="https://instagram.com/">
+                     <li class="fab fa-instagram"></li>
+                  </a>
+                  <a href="https://twitter.com/">
+                     <li class="	fab fa-twitter"></li>
+                  </a>
+
+               </div>
+               <a href="Isha Singadiya Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+               <input type="text" name="Name" placeholder="Your Name" required>
+               <input type="email" name="Email" placeholder="Your Email " required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">Message sent successfully</span>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright @ ISha. <i class="fa-solid fa-heart"></i>All rights received</p>
+      </div>
+   </div>
+
+
+
+   <script>
+
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+      function opentab(tabname) {
+         for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+         }
+         for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+      }
+
+   </script>
+
+   <script>
+      var sidmeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+         sidmeu.style.right = "0";
+      }
+      function closemenu() {
+         sidmeu.style.right = "-200px";
+      }
+
+   </script>
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyqf8qJ_1o3uszvMw12Uk6-DoO6CE0uSF8WG1XdHg53bEdm2jWneuzjEGsV2BNzD1HHgA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response =>{
+               msg.innerHTML = "Message sent successfully"
+               setTimeout(function(){
+                  msg.innerHTML = ""
+               }, 5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+      })
+      
+   </script>
+
+   <script src="https://kit.fontawesome.com/48bcbf2c30.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
